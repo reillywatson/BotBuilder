@@ -1,5 +1,5 @@
 {
-  "name": "botbuilder",
+  "name": "botbuilder-reilly",
   "author": "Microsoft Corp.",
   "description": "Bot Builder is a dialog system for building rich bots on virtually any platform.",
   "version": "1.0.1",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/BotBuilder.git"
+    "url": "https://github.com/reillywatson/BotBuilder.git"
   },
   "main": "./lib/botbuilder.js",
   "typings": "./lib/botbuilder.d.ts",
