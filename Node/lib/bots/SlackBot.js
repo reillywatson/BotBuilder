@@ -73,6 +73,11 @@ var SlackBot = (function (_super) {
                 dispatch(bot, msg, ss);
             });
         });
+        this.controller.on('file_share', function(bot, msg) {
+            msg.attachments = [{contentType: msg.file.mime, title: msg.file.title, contentUrl: msg.file.url_private_download, image_url: msg.file.url_private_download}];
+            console.log(JSON.stringify(msg));
+            dispatch(bot, msg);
+        });
         this.controller.on('ambient', function (bot, msg) {
             var key = msg.channel + ':' + msg.user;
             if (sessions.hasOwnProperty(key)) {
